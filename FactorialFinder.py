@@ -39,6 +39,6 @@ class FactorialLoop:
 # ====================================
 
 if __name__ == "__main__":
+	choice = int(input("Enter 0 for Loop-version, anything else (or nothing) for Recursion: ") or 1)
 	n = int(input("Enter inital value: "))
-	factorialRec = FactorialRecursion(n)
-	factorialLoop = FactorialLoop(n)
+	factorial = FactorialRecursion(n) if choice else FactorialLoop(n)
